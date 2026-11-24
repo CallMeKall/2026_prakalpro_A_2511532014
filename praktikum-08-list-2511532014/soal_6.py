@@ -2,7 +2,6 @@ LAST_DIGIT = 4  # change to the last digit of your NIM
 daily_limit = 30000 + LAST_DIGIT * 1000
 expenses = []
 total = 0
-high = 0
 limit = 0
 
 # untuk input
@@ -11,8 +10,6 @@ for i in range(7):
     expenses.append(daily)
     total += daily
 
-    if daily > high:
-        high = daily
     if daily > daily_limit:
         limit += 1
 
